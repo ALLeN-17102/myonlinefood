@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* NAVBAR */
+
+#navbar{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    top: 0px;
+    /* border: 2px solid black;  */
+    /* background-color: aqua; */
+   
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+  
+ 
+}
+a{
+    text-decoration: none;
+    color:black;
+    padding:3px 20px;
+   
+    border-radius: 10px;
+    display: block;
+}
+a:hover{
+    color: white;
+    background-color: black;
+}
+ #logo img{
+    height: 70px;
+    width: 70px;
+    margin: 10px 20px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar{
+    position:absolute   ;
+}
+/* HOME */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /* margin: 30px 80px;   */
+   height: 430px;
+}
+#btn{
+    border:2px solid black;
+    border-radius: 15px;
+    width: 150px;
+    /* height: 20px; */
+    margin: 15px;
+    padding: 5px 5px;
+    background-color:white ;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#btn:hover{
+    color: white;
+    background-color: black;
+}
+/* p{
+    line-height: 2em;
+}
+h1{
+    line-height: 2em;
+}*/
+#home::before{ 
+    content: "";
+    background:url('../img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    font-size: 3.0rem;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+}
+#home p{
+    font-size: 1.0rem;
+    text-align: center;
+    color:black;
+    padding: 5px 10px;
+}
+/* SERVICES */
+ /* .services{
+    margin-top:200px ;
+ } */
+ .services h1{
+     text-align: center;
+     font-size: 3.0rem;
+ } 
+ .services h2{
+     text-align: center;
+     font-size: 1.5rem;
+ } 
+ .services p{
+     text-align: center ;
+ }
+#services1{
+    display: flex;
+    margin: 20px;
+   
+}
+#services1 .box{
+    border: 2px solid black;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    background-color: rgb(224, 224, 231);
+
+   
+   
+}
+#services1 .box img{
+    height: 200px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+/* CLIENTS */
+#clients h1{
+text-align: center;
+font-size: 3.0rem;
+}
+#clients1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients1 img{
+    margin: 5px 15px;
+    width: 33%;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+ #clients{
+     position: relative;
+    height: 300px;
+    margin: 80px auto;
+    
+ } 
+#clients::before{
+    content: "";
+    background: url(/img/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+ 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* CONTACT US */
+#contact h1{
+    text-align: center;
+    font-size: 3.0rem;
+}
+#contact{
+    position: relative;
+    height: 550px;
+}
+#contact::before{
+    content: "";
+    background:url('/img/bg3.jpg') no-repeat center center/cover ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#contact1{
+    display: flex;
+    /* flex-direction: column;   */
+    padding-bottom: 34px;
+    /* justify-content: center;     */
+    /* align-items: center; */
+}
+#contact1 form{
+    width: 50%;  
+    margin : 30px;
+}
+#contact1 label{
+    /* margin: 10px;
+    padding: 10px; */
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+}
+#contact1 input{
+    margin: 10px;
+    width: 100%;
+    border: 2px solid black ;
+    border-radius:  10px; 
+    font-size:1rem ;
+    font-weight: bold;
+   
+    padding: 5px;
+
+}
+#contact1 textarea{
+   width: 100%;
+   padding: 0.5rem;
+   border: 2px solid black ;
+   border-radius:  10px; 
+  
+}
+/* COPY */
+#copy{
+    text-align: center;
+}
+#copy a{
+    margin: 30px auto;
+    width: 150px;
+
+}
+#copy p{
+    background-color: black;
+    color: white;
+}
