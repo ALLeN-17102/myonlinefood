@@ -35,8 +35,8 @@ a:hover{
     background-color: black;
 }
  #logo img{
-    height: 70px;
-    width: 70px;
+    height: 85px;
+    width: 100px;
     margin: 10px 20px;
 }
 #navbar::before{
